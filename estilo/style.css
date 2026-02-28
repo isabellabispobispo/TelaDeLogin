@@ -16,6 +16,8 @@
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none;
+  text-align: center;
 }
 
 #btn1:hover {
@@ -37,6 +39,8 @@
   cursor: pointer;
   transition: 0.3s ease;
   border: 1px solid #F2505D;
+  text-decoration: none;
+  text-align: center;
 }
 
 #btn2:hover {
@@ -81,7 +85,6 @@ p,h1 {
     text-align: center;
 }
 
-.escondido {
-    display: none;
-}
+
+
 

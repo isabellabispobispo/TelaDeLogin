@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo/cadastro.css">
+</head>
+<body>
+    <main>
+        <section>
+            <!-- <div><img src="imagens/foguete.png" alt=""></div> -->
+
+            
+                <form action="login.php" target="_blank" method="post" autocomplete="on" id="form">
+
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome" required placeholder="Nome completo:">
+
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required autocomplete="email">
+                  
+                    <input type="number" name="tel" id="tel" minlength="8" maxlength="10" autocomplete="on" placeholder="Telefone:" required>
+                    <label for="senha"></label>
+
+                    <input type="password" name="senha" id="senha" required minlength="5" max="15" placeholder="sua senha:">
+                    <label for="tel"></label>
+                  
+                    <!-- <label for="data">Data de Nascimento:</label>
+                    <input type="date" name="data" id="data"  max="2009-02-27" required placeholder="data de nascimento"> -->
+                </form>
+           
+
+            <div id="icons">
+               <p>OU</p>
+                    <img src="imagens/google.png" alt="Icon do Google">
+                    <img src="imagens/X_icon.png" alt="Icon do X(antigo twiiter)">
+                    <a href="cadastro.html" class="naocad"><em>Já é cadastrado? <strong>Entrar</strong></em></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
