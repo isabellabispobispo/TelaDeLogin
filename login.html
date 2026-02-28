@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/login.css">
     <title>Login</title>
 </head>
 <body>
     <main>
         <section>
-            <div><img src="imagens/foguete.png" alt=""></div>
 
-            <form action="login.php">
-                
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required autocomplete="email">
+            <div>
+                <img src="imagens/ramo.png" alt="" id="ramo">
+            </div>
 
-                <label for="senha">Sua senha</label>
-                <input type="password" name="senha" id="senha" required autocomplete="current-password" minlength="5" maxlength="15">
+            <form action="login.php" method="post" autocomplete="on">
+
+
+                <div class="input-group">
+                    <input type="email" name="email" id="email" required autocomplete="email">
+                    <label for="email">Email:</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="senha" id="senha" required 
+                    autocomplete="current-password" minlength="5" maxlength="15">
+                    <label for="senha">Sua senha:</label>
+                </div>
+
+                 <button type="submit" class="btn-login">Entrar</button> 
+
                 <a href="#" class="botaosenha"><em>Esqueceu a senha?</em></a>
             </form>
-            
+
+           
+            <p>Outras formas de login:</p>
             <div id="icons">
-                    <p>outras formas de login</p>
-                    <img src="imagens/google.png" alt="Icon do Google">
-                    <img src="imagens/X_icon.png" alt="Icon do X(antigo twiiter)">
-                    <a href="login.html" class="naocad"><em>Novo por aqui? <strong>Criar conta</strong></em></a>
-                   
+                <a href="#"><img src="imagens/google.png" alt="Login com Google"></a>
+                <a href="#"><img src="imagens/X_icon.png" alt="Login com X"></a>
             </div>
+
+           
+
+            <a href="cadastro.html" class="naocad">
+                <em>Novo por aqui? <strong>Criar conta</strong></em>
+            </a>
+
         </section>
     </main>
 </body>

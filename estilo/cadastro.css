@@ -5,10 +5,21 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    max-width: 100%;
+    
 }
 
-body {
-    padding: 20px;
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+     padding: 15px;
+}
+
+main {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 #form{
@@ -26,9 +37,14 @@ form input {
   margin-bottom: 12px;
 }
 
+
+
 #form input {
-    background-color: #ffe4e4;
-    border: none;
+    border: none;          
+    border-bottom: 1px solid #ccc;
+
+    outline: none;         
+    background: transparent; 
     padding: 10px;
     border-radius: 8px;
 }
@@ -37,6 +53,7 @@ form input {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 35px;
 }
 
 #icons img {
@@ -55,3 +72,26 @@ form input {
     transition: transform 0.2s, border 0.1s;
 }
 
+p {
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+#foguete {
+    position: fixed;
+   top: -90px;
+    right: 60px;
+    z-index: -1;
+    opacity: 0.8;
+    transform: rotate(60deg);
+}
